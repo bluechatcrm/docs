@@ -21,8 +21,8 @@
   },
 
   "fonts": {
-    "family": "Open Sans",
-    "weight": 500
+    "family": "Inter",
+    "weight": 400
   },
 
   "favicon": {
