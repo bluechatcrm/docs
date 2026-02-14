@@ -7,7 +7,10 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo_dark.png"
+  },
   "navigation": {
     "tabs": [
       {
@@ -118,5 +121,8 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "fonts": {
+    "family": "Inter"
   }
 }
