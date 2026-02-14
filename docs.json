@@ -117,9 +117,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify",
-      "github": "https://github.com/bluechatcrm"
+      "github": "https://github.com/bluechatcrm",
+      "website": "https://bluechat.lat"
     }
   },
   "fonts": {
