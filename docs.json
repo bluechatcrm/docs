@@ -44,6 +44,11 @@
     ]
   },
 
+
+  "features": {
+    "copyPage": false
+  },
+
   "navigation": {
     "global": {
       "anchors": [
@@ -126,6 +131,18 @@
       }
     ]
   },
+
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
 
   "footer": {
