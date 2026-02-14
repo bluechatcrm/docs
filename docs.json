@@ -86,8 +86,9 @@
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "APIs de Aplicación",
             "pages": [
+              "api-reference/endpoint/cuenta",
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
