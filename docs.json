@@ -7,7 +7,10 @@
     "light": "#0166ff",
     "dark": "#0166ff"
   },
-  "favicon": "/logo/logo.png",
+  "favicon": {
+    "light": "/images/logobluechatfavicon.png",
+    "dark": "/images/logobluechatfavicon.png"
+  },
   "navigation": {
     "tabs": [
       {
