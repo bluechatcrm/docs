@@ -69,66 +69,19 @@
 
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Guías",
         "groups": [
           {
-            "group": "Getting started",
-            "hidden": true,
+            "group": "Introducción",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "hidden": true,
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "hidden": true,
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "hidden": true,
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "index"
             ]
           }
         ]
       },
       {
         "tab": "Referencia de API",
-        "groups": [
-          {
-            "group": "Empezando",
-            "pages": [
-              "api-reference/Introduccion"
-            ]
-          },
-          {
-            "group": "APIs de Aplicación",
-            "pages": [
-              "api-reference/endpoint/cuenta",
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        "openapi": "openapi.json"
       }
     ]
   },
