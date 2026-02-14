@@ -17,12 +17,20 @@
         {
           "anchor": "Documentation",
           "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
+          "color": {
+            "light": "#0166ff",
+            "dark": "#0166ff"
+          },
+          "href": "https://developers.bluechat.lat/"
         },
         {
           "anchor": "Blog",
           "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
+          "color": {
+            "light": "#0166ff",
+            "dark": "#0166ff"
+          },
+          "href": "https://bluechat.lat/"
         }
       ]
     },
