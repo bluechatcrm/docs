@@ -4,13 +4,16 @@ Este es el repositorio oficial de la documentación para desarrolladores de Blue
 
 ### 🛠 Desarrollo
 
-Instala la Mintlify CLI para previsualizar los cambios en la documentación de forma local. Para instalarla, usa el siguiente comando:
-
+Instala [Mintlify CLI](https://www.npmjs.com/package/mint) para previsualizar los cambios en la documentación de forma local. Para instalarla, usa el siguiente comando:
+```
 npm i -g mint
+```
 
 Luego ejecuta el siguiente comando en la raíz de tu documentación (donde se encuentra el archivo mint.json):
 
+```
 mint dev
+```
 
 ### 🚀 Publicación de cambios
 
