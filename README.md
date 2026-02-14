@@ -1,55 +1,19 @@
-# Mintlify Starter Kit
+## 📘 Documentación para Desarrolladores de Bluechat
 
-Use the starter kit to get your docs deployed and ready to customize.
+Este es el repositorio oficial de la documentación para desarrolladores de Bluechat. Esta guía contiene todo lo que necesitas saber sobre las APIs de Bluechat y cómo construir flujos personalizados sobre ellas.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+### 🛠 Desarrollo
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Instala la Mintlify CLI para previsualizar los cambios en la documentación de forma local. Para instalarla, usa el siguiente comando:
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
 npm i -g mint
-```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Luego ejecuta el siguiente comando en la raíz de tu documentación (donde se encuentra el archivo mint.json):
 
-```
 mint dev
-```
 
-View your local preview at `http://localhost:3000`.
+### 🚀 Publicación de cambios
 
-## Publishing changes
+Los cambios se desplegarán automáticamente en producción después de hacer push a la rama principal.
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+También puedes previsualizar los cambios mediante Pull Requests (PR), lo que generará un enlace de vista previa de la documentación.
