@@ -141,5 +141,8 @@
     "color": {
       "dark": "#0a0c10"
     }
+  },
+  "appearance": {
+    "strict": true
   }
 }
