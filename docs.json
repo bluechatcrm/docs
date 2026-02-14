@@ -17,7 +17,7 @@
   },
 
   "appearance": {
-    "strict": true
+    "strict": false
   },
 
   "fonts": {
