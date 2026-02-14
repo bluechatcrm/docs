@@ -21,7 +21,8 @@
   },
 
   "fonts": {
-    "family": "Roboto"
+    "family": "Roboto",
+    "weight": 500
   },
 
   "favicon": {
