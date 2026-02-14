@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "palm",
   "name": "Bienvenido a la documentación para desarrolladores de Bluechat",
   "colors": {
     "primary": "#0166ff",
