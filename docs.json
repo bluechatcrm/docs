@@ -66,7 +66,6 @@
         }
       ]
     },
-
     "tabs": [
       {
         "tab": "Guides",
@@ -119,7 +118,8 @@
             ]
           },
           {
-            "group": "APIs de Aplicación"
+            "group": "APIs de Aplicación",
+            "openapi": "api-reference/openapi.json"
           }
         ]
       }
