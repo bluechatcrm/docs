@@ -1,41 +1,110 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "Documentación para desarrolladores de Bluechat",
+  "name": "Bienvenido a la documentación para desarrolladores de Bluechat",
+  "description": "La guía completa para configurar e integrar Bluechat, la plataforma de soporte al cliente.",
+
   "colors": {
     "primary": "#0166ff",
     "light": "#0166ff",
     "dark": "#0166ff"
   },
+
+  "background": {
+    "color": {
+      "dark": "#0a0c10"
+    }
+  },
+
+  "appearance": {
+    "strict": true
+  },
+
+  "fonts": {
+    "family": "Roboto"
+  },
+
   "favicon": {
     "light": "/images/logobluechatfavicon.png",
     "dark": "/images/logobluechatfavicon.png"
   },
+
+  "logo": {
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo_dark.png"
+  },
+
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:soporte@bluechat.lat"
+      }
+    ]
+  },
+
   "navigation": {
     "global": {
       "anchors": [
         {
-          "anchor": "Documentación",
+          "anchor": "Documentation",
           "icon": "book-open-cover",
+          "color": {
+            "light": "#0166ff",
+            "dark": "#0166ff"
+          },
           "href": "https://developers.bluechat.lat/"
         },
         {
-          "anchor": "Sitio Web",
+          "anchor": "Blog",
           "icon": "newspaper",
+          "color": {
+            "light": "#0166ff",
+            "dark": "#0166ff"
+          },
           "href": "https://bluechat.lat/"
         }
       ]
     },
+
     "tabs": [
       {
-        "tab": "Guías",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "Introducción",
+            "group": "Getting started",
+            "hidden": true,
             "pages": [
               "index",
               "quickstart",
-              "authentication"
+              "development"
+            ]
+          },
+          {
+            "group": "Customization",
+            "hidden": true,
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "Writing content",
+            "hidden": true,
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "hidden": true,
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
             ]
           }
         ]
@@ -44,79 +113,43 @@
         "tab": "Referencia de API",
         "groups": [
           {
-            "group": "Cuentas (Accounts)",
+            "group": "Empezando",
             "pages": [
-              "api/accounts/get-account",
-              "api/accounts/update-account"
+              "api-reference/Introduccion"
             ]
           },
           {
-            "group": "Agentes (Agents)",
+            "group": "APIs de Aplicación",
             "pages": [
-              "api/agents/list-agents",
-              "api/agents/create-agent",
-              "api/agents/update-agent",
-              "api/agents/delete-agent"
-            ]
-          },
-          {
-            "group": "Contactos (Contacts)",
-            "pages": [
-              "api/contacts/list-contacts",
-              "api/contacts/create-contact",
-              "api/contacts/update-contact",
-              "api/contacts/delete-contact"
-            ]
-          },
-          {
-            "group": "Conversaciones (Conversations)",
-            "pages": [
-              "api/conversations/list-conversations",
-              "api/conversations/create-conversation",
-              "api/conversations/send-message",
-              "api/conversations/resolve-conversation"
-            ]
-          },
-          {
-            "group": "Integraciones",
-            "pages": [
-              "api/integrations/list-hooks",
-              "api/integrations/create-hook",
-              "api/integrations/delete-hook"
+              "api-reference/endpoint/cuenta",
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
             ]
           }
         ]
       }
     ]
   },
-  "logo": {
-    "light": "/logo/logo.png",
-    "dark": "/logo/logo_dark.png"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Soporte",
-        "href": "mailto:soporte@bluechat.lat"
-      }
+
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
     ]
   },
+
   "footer": {
     "socials": {
       "github": "https://github.com/bluechatcrm",
       "website": "https://bluechat.lat"
     }
-  },
-  "fonts": {
-    "family": "Roboto"
-  },
-  "description": "Guía oficial para integrar y desarrollar sobre la API REST de Bluechat (basado en Chatwoot Open Source).",
-  "background": {
-    "color": {
-      "dark": "#0a0c10"
-    }
-  },
-  "appearance": {
-    "strict": true
   }
 }
