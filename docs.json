@@ -72,9 +72,9 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Empezando",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/Introduccion"
             ]
           },
           {

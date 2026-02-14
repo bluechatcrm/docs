@@ -1,0 +1,58 @@
+---
+title: "Introducción a las APIs de Bluechat"
+description: "Aprende cómo utilizar las APIs de Bluechat para crear integraciones y personalizar experiencias de chat."
+---
+
+Bienvenido a la documentación de la API de Bluechat. Ya sea que estés desarrollando flujos personalizados para tu equipo de soporte o integrando Bluechat en tu producto, nuestras APIs te brindan la flexibilidad y potencia necesarias para aprovechar al máximo Bluechat.
+
+Bluechat ofrece tres categorías de APIs, cada una diseñada para un caso de uso específico:
+
+- **APIs de Aplicación** – Para automatización a nivel de cuenta e integraciones orientadas a agentes.
+- **APIs de Cliente** – Para construir interfaces de chat personalizadas para usuarios finales.
+- **APIs de Plataforma** – Para gestionar y administrar instalaciones a gran escala.
+
+### APIs de aplicación
+
+Las APIs de Aplicación están diseñadas para interactuar con una cuenta de Bluechat desde la perspectiva de un agente o administrador. Puedes utilizarlas para crear herramientas internas, automatizar flujos de trabajo o realizar operaciones masivas como importaciones y exportaciones de datos.
+
+- **Autenticación:** requiere un `access_token` de usuario, que puede generarse desde la Configuración de Perfil después de iniciar sesión en tu cuenta de Bluechat.
+- **Ejemplo:** Google Cloud Functions Demo
+
+### APIs de cliente
+
+Las APIs de Cliente están pensadas para crear experiencias de mensajería personalizadas sobre Bluechat. Si no utilizas el widget web nativo o deseas integrar el chat en tu aplicación móvil, estas APIs son la opción adecuada.
+
+- **Autenticación:** utiliza `inbox_identifier` (desde Configuración → Buzones API) y `contact_identifier` (devuelto al crear un contacto).
+- **Ejemplos:**
+
+  Client API Demo
+
+  Flutter SDK
+
+### APIs de Plataforma
+
+Las APIs de Plataforma se utilizan para administrar instalaciones de Bluechat a nivel administrativo. Permiten gestionar usuarios, roles y cuentas, así como sincronizar datos desde sistemas externos de autenticación.
+
+> **Nota:** las APIs de Plataforma no pueden acceder a cuentas o usuarios creados mediante la interfaz de Bluechat ni mediante otras claves API. Solo pueden acceder a cuentas, usuarios y objetos creados por la misma clave API de plataforma utilizada para autenticación, o a objetos a los que se les haya concedido permiso explícitamente.
+
+**Autenticación:** requiere un `access_token` generado por una Plataforma App, que puede crearse desde la Consola de Super Administrador.
+
+Utiliza la API adecuada según tu caso de uso y podrás extender, personalizar e integrar Bluechat en tu stack tecnológico con facilidad.
+
+### FAQ
+
+**¿Por qué obtengo un error 401 “Non permissible resource” al usar tokens de la Platform API?**
+
+Las APIs de Plataforma no pueden acceder a cuentas o usuarios creados mediante la interfaz de Bluechat ni mediante otras claves API. Solo pueden acceder a cuentas, usuarios y objetos creados por la misma clave API o a objetos a los que se les haya concedido permiso explícitamente.
+
+Si necesitas otorgar a una Plataforma App acceso a un objeto (como una Cuenta) que no haya creado, puedes agregar el permiso manualmente usando el siguiente comando en la consola de Rails (reemplaza los números por los IDs correspondientes):
+
+```ruby
+PlatformAppPermissible.create!(platform_app: PlatformApp.find(1), permissible: Account.find(1))
+```
+
+**¿Qué debo hacer si la documentación de la API parece desactualizada?**
+
+Si encuentras discrepancias entre la documentación y el comportamiento real de la API, se recomienda inspeccionar las solicitudes que realiza la interfaz de Bluechat desde la pestaña Network en la consola de desarrollador de tu navegador. De esta manera podrás verificar el formato exacto de la solicitud y la estructura del payload que funciona con la API actual, y replicarlo en tu integración.
+
+También puedes contribuir enviando un pull request con correcciones en la documentación o creando un issue en el repositorio correspondiente para ayudar a mantener la documentación actualizada.
