@@ -124,5 +124,10 @@
   "fonts": {
     "family": "Roboto"
   },
-  "description": "La guía completa para configurar e integrar Bluechat, la plataforma de soporte al cliente."
+  "description": "La guía completa para configurar e integrar Bluechat, la plataforma de soporte al cliente.",
+  "background": {
+    "color": {
+      "dark": "#0a0c10"
+    }
+  }
 }
